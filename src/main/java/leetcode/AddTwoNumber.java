@@ -16,6 +16,7 @@ public class AddTwoNumber {
             curr.next = new ListNode(sum % 10); // 填答案
 
             curr = curr.next; // 換下一列
+
             if (l1 != null) {
                 l1 = l1.next;
             }
