@@ -3,6 +3,9 @@ package leetcode;
 public class RemoveDuplicates {
 
     public int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         int slow = 0; // 最後一個 不重複的值
         for (int fast = 1; fast < nums.length; fast++){
             if (nums[fast]!= nums[slow]){

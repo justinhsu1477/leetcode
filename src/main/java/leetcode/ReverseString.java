@@ -14,4 +14,8 @@ public class ReverseString {
         }
         return  String.valueOf(arr);
     }
+
+    public String reverse(String s){
+        return new StringBuilder(s).reverse().toString();
+    }
 }

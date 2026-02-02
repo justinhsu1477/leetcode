@@ -7,6 +7,10 @@ import java.util.Map;
 // https://leetcode.com/problems/two-sum/
 public class Solution_0001_TwoSum {
     public int[] twoSum(int[] nums, int target) {
+        if (nums.length<2){
+            throw new IllegalArgumentException("數列小於2");
+        }
+
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
