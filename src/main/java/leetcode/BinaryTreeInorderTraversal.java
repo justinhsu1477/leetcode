@@ -9,10 +9,11 @@ import java.util.Stack;
 
 public class BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
-        if (root == null){
-            return null;
-        }
         List<Integer> list = new ArrayList<>();
+        if (root == null){
+            return list;
+        }
+
         helper(root, list);
         return list;
     }
